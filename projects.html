@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Projects | Rajdeep Bhandari</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#111;
+    color:white;
+}
+
+.container{
+    width:min(1100px,90%);
+    margin:auto;
+    padding:80px 0;
+}
+
+h1{
+    font-size:4rem;
+    margin-bottom:15px;
+}
+
+.subtitle{
+    color:#bfbfbf;
+    font-size:1.15rem;
+    margin-bottom:60px;
+    max-width:700px;
+}
+
+.projects{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(420px,1fr));
+    gap:35px;
+}
+
+.card{
+
+    background:#1b1b1b;
+    border:1px solid #2c2c2c;
+    border-radius:18px;
+
+    padding:35px;
+
+    transition:.25s;
+}
+
+.card:hover{
+
+    transform:translateY(-8px);
+
+    border-color:#6db6ff;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.35);
+
+}
+
+.icon{
+
+    font-size:3rem;
+
+    margin-bottom:20px;
+
+}
+
+.card h2{
+
+    font-size:2rem;
+
+    margin-bottom:15px;
+
+}
+
+.card p{
+
+    color:#cfcfcf;
+
+    line-height:1.7;
+
+    margin-bottom:30px;
+
+}
+
+.tech{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:10px;
+
+    margin-bottom:30px;
+
+}
+
+.tech span{
+
+    background:#242424;
+
+    color:#7fc1ff;
+
+    padding:8px 14px;
+
+    border-radius:999px;
+
+    font-size:.9rem;
+
+}
+
+.buttons{
+
+    display:flex;
+
+    gap:15px;
+
+}
+
+.buttons a{
+
+    text-decoration:none;
+
+    color:white;
+
+    padding:12px 22px;
+
+    border-radius:10px;
+
+    transition:.25s;
+
+}
+
+.live{
+
+    background:#6db6ff;
+
+    color:#111 !important;
+
+}
+
+.live:hover{
+
+    background:white;
+
+}
+
+.github{
+
+    border:1px solid #555;
+
+}
+
+.github:hover{
+
+    border-color:#6db6ff;
+
+    color:#6db6ff;
+
+}
+
+.back{
+
+    display:inline-block;
+
+    margin-top:70px;
+
+    color:#6db6ff;
+
+    text-decoration:none;
+
+    font-size:1rem;
+
+}
+
+.tooltip{
+    position:relative;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    width:24px;
+    height:24px;
+    border-radius:50%;
+    background:#2a2a2a;
+    color:#6db6ff;
+    cursor:help;
+    font-size:.8rem;
+}
+
+.tooltip:hover{
+    background:#333;
+}
+
+.tooltiptext{
+    visibility:hidden;
+    opacity:0;
+
+    position:absolute;
+    left:50%;
+    bottom:135%;
+
+    transform:translateX(-50%);
+
+    width:280px;
+
+    background:#222;
+    color:#ddd;
+
+    padding:12px;
+    border-radius:8px;
+
+    font-size:.85rem;
+    line-height:1.5;
+
+    border:1px solid #444;
+
+    transition:.2s;
+
+    z-index:100;
+}
+
+.tooltip:hover .tooltiptext{
+    visibility:visible;
+    opacity:1;
+}
+@media (max-width:600px){
+
+    .container{
+        width:90%;
+        padding:50px 0;
+    }
+
+    h1{
+        font-size:2.8rem;
+    }
+
+    .subtitle{
+        font-size:1rem;
+        margin-bottom:40px;
+    }
+
+    .projects{
+        grid-template-columns:1fr;
+        gap:25px;
+    }
+
+    .card{
+        padding:25px;
+    }
+
+    .card h2{
+        font-size:1.7rem;
+    }
+
+    .buttons{
+        flex-wrap:wrap;
+    }
+
+    .tooltiptext{
+        left:auto;
+        right:0;
+        transform:none;
+    }
+
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Projects</h1>
+
+<p class="subtitle">
+Projects exploring software engineering, security, graphics programming and creative tools.
+</p>
+
+<div class="projects">
+
+<div class="card">
+
+<div class="icon">🔐</div>
+
+<h2>Secure Vault</h2>
+
+<p>
+A secure note storage application featuring encrypted note storage, JWT authentication,
+device-based authentication and a Node.js + MySQL backend.
+Designed so that even a database breach reveals only encrypted data.
+</p>
+
+<div class="tech">
+
+<span>JavaScript</span>
+<span>Node.js</span>
+<span>Express</span>
+<span>MySQL</span>
+<span>JWT</span>
+<span>Crypto</span>
+
+</div>
+
+<div class="buttons">
+
+<a class="live" href="https://secure-vault-dun.vercel.app/">Live Demo</a> 
+    <span class="tooltip">
+        ⓘ
+        <span class="tooltiptext">
+            Some Indian ISPs block Railway's default
+            *.up.railway.app domain.
+            <br><br>
+            If the demo doesn't load, enable
+            Secure DNS (Cloudflare 1.1.1.1 or Google DNS)
+            and refresh.
+        </span>
+    </span>
+<a class="github" href="https://github.com/Ramjdeemp/Secure-Vault">GitHub</a>
+</div>
+
+</div>
+
+<div class="card">
+
+<div class="icon">🎨</div>
+
+<h2>Paint Web App</h2>
+
+<p>
+A feature-rich HTML5 Canvas drawing application with advanced brushes,
+vector filling, text editing, mirroring modes, undo/redo functionality,
+and PNG export.
+</p>
+
+<div class="tech">
+
+<span>HTML5 Canvas</span>
+<span>JavaScript</span>
+<span>CSS</span>
+
+</div>
+
+<div class="buttons">
+
+<a class="live" href="https://www.pbainst.in/TUTORIAL/Paint%20App/index.html">Live Demo</a>
+
+</div>
+
+</div>
+
+</div>
+
+<a class="back" href="index.html">← Back to Home</a>
+
+</div>
+
+</body>
+</html>
