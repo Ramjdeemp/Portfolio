@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -44,140 +45,88 @@ h1{
 }
 
 .card{
-
     background:#1b1b1b;
     border:1px solid #2c2c2c;
     border-radius:18px;
-
     padding:35px;
-
     transition:.25s;
 }
 
 .card:hover{
-
     transform:translateY(-8px);
-
     border-color:#6db6ff;
-
     box-shadow:0 15px 35px rgba(0,0,0,.35);
-
 }
 
 .icon{
-
     font-size:3rem;
-
     margin-bottom:20px;
-
 }
 
 .card h2{
-
     font-size:2rem;
-
     margin-bottom:15px;
-
 }
 
 .card p{
-
     color:#cfcfcf;
-
     line-height:1.7;
-
     margin-bottom:30px;
-
 }
 
 .tech{
-
     display:flex;
-
     flex-wrap:wrap;
-
     gap:10px;
-
     margin-bottom:30px;
-
 }
 
 .tech span{
-
     background:#242424;
-
     color:#7fc1ff;
-
     padding:8px 14px;
-
     border-radius:999px;
-
     font-size:.9rem;
-
 }
 
 .buttons{
-
     display:flex;
-
+    align-items:center;
     gap:15px;
-
 }
 
 .buttons a{
-
     text-decoration:none;
-
     color:white;
-
     padding:12px 22px;
-
     border-radius:10px;
-
     transition:.25s;
-
 }
 
 .live{
-
     background:#6db6ff;
-
     color:#111 !important;
-
 }
 
 .live:hover{
-
     background:white;
-
 }
 
 .github{
-
     border:1px solid #555;
-
 }
 
 .github:hover{
-
     border-color:#6db6ff;
-
     color:#6db6ff;
-
 }
 
 .back{
-
     display:inline-block;
-
     margin-top:70px;
-
     color:#6db6ff;
-
     text-decoration:none;
-
     font-size:1rem;
-
 }
 
 .tooltip{
@@ -192,6 +141,7 @@ h1{
     color:#6db6ff;
     cursor:help;
     font-size:.8rem;
+    flex-shrink:0;
 }
 
 .tooltip:hover{
@@ -230,6 +180,7 @@ h1{
     visibility:visible;
     opacity:1;
 }
+
 @media (max-width:600px){
 
     .container{
@@ -270,6 +221,7 @@ h1{
     }
 
 }
+
 </style>
 
 </head>
@@ -281,10 +233,62 @@ h1{
 <h1>Projects</h1>
 
 <p class="subtitle">
-Projects exploring software engineering, security, graphics programming and creative tools.
+Projects exploring software engineering, security, data analysis, graphics programming and creative tools.
 </p>
 
 <div class="projects">
+
+
+<!-- SEO ANALYZER -->
+
+<div class="card">
+
+<div class="icon">📊</div>
+
+<h2>SEO Analyzer</h2>
+
+<p>
+A PHP-based SEO analytics dashboard that authenticates users with Google OAuth
+and analyzes Google Search Console data. It retrieves website search-performance
+metrics, validates property-level access, securely handles OAuth tokens, and uses
+a fixed-size heap to efficiently select the top 50 keywords by clicks, impressions,
+CTR or search position.
+</p>
+
+<div class="tech">
+
+<span>PHP</span>
+<span>JavaScript</span>
+<span>Google OAuth</span>
+<span>Search Console API</span>
+<span>HTML/CSS</span>
+<span>JSON</span>
+<span>Data Structures</span>
+
+</div>
+
+<div class="buttons">
+
+<a class="github"
+   href="https://github.com/Ramjdeemp/seoautomation"
+   target="_blank"
+   rel="noopener noreferrer">
+    GitHub
+</a>
+
+<span class="tooltip">
+    ⓘ
+    <span class="tooltiptext">
+        Live deployment coming soon.
+    </span>
+</span>
+
+</div>
+
+</div>
+
+
+<!-- SECURE VAULT -->
 
 <div class="card">
 
@@ -311,22 +315,38 @@ Designed so that even a database breach reveals only encrypted data.
 
 <div class="buttons">
 
-<a class="live" href="https://secure-vault-dun.vercel.app/">Live Demo</a> 
-    <span class="tooltip">
-        ⓘ
-        <span class="tooltiptext">
-            Some Indian ISPs block Railway's default
-            *.up.railway.app domain.
-            <br><br>
-            If the demo doesn't load, enable
-            Secure DNS (Cloudflare 1.1.1.1 or Google DNS)
-            and refresh.
-        </span>
+<a class="live"
+   href="https://secure-vault-dun.vercel.app/"
+   target="_blank"
+   rel="noopener noreferrer">
+    Live Demo
+</a>
+
+<span class="tooltip">
+    ⓘ
+    <span class="tooltiptext">
+        Some Indian ISPs block Railway's default
+        *.up.railway.app domain.
+        <br><br>
+        If the demo doesn't load, enable
+        Secure DNS (Cloudflare 1.1.1.1 or Google DNS)
+        and refresh.
     </span>
-<a class="github" href="https://github.com/Ramjdeemp/Secure-Vault">GitHub</a>
+</span>
+
+<a class="github"
+   href="https://github.com/Ramjdeemp/Secure-Vault"
+   target="_blank"
+   rel="noopener noreferrer">
+    GitHub
+</a>
+
 </div>
 
 </div>
+
+
+<!-- PAINT APP -->
 
 <div class="card">
 
@@ -350,11 +370,17 @@ and PNG export.
 
 <div class="buttons">
 
-<a class="live" href="https://www.pbainst.in/TUTORIAL/Paint%20App/index.html">Live Demo</a>
+<a class="live"
+   href="https://www.pbainst.in/TUTORIAL/Paint%20App/index.html"
+   target="_blank"
+   rel="noopener noreferrer">
+    Live Demo
+</a>
 
 </div>
 
 </div>
+
 
 </div>
 
@@ -364,3 +390,4 @@ and PNG export.
 
 </body>
 </html>
+```
